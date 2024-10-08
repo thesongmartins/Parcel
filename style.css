@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000000d4;
+  color: #ffffff;
+}
+.parcelAboutSection,
+.customerReviewSection {
+  padding: 20px 30px;
+}
+.parcelAboutSection h1 {
+  /* padding: 10px; */
+  width: 50%;
+}
+.aboutRoll {
+  display: flex;
+  padding-top: 30px;
+  flex-wrap: nowrap;
+  gap: 60px;
+}
+.aboutRoll h4 {
+  font-weight: 700px;
+}
+.aboutRoll p {
+  padding-top: 10px;
+}
+.widthofTheRoll {
+  width: 33%;
+}
+
+/* customerReview */
+.customerReviewSection h2 {
+  padding: 20px 0;
+}
+.reviewDiv {
+  display: flex;
+  gap: 40px;
+}
+.customerReview {
+  border: 1px solid #ffffff;
+  padding: 10px 8px;
+  width: 33%;
+}
