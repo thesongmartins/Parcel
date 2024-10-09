@@ -13,26 +13,28 @@ body {
 }
 .parcelAboutSection,
 .customerReviewSection {
-  padding: 30px 40px;
+  padding: 30px 20px;
 }
 .parcelAboutSection h1 {
-  padding-left: 10px;
+  padding-left: 13px;
+  width: 500px;
 }
 
-.aboutRoll {
+.aboutDivRow {
   display: flex;
-  padding-top: 30px;
-  flex-wrap: nowrap;
-  gap: 60px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+  gap: 40px;
 }
-.aboutRoll h4 {
+.aboutDivRow h4 {
   font-weight: 700px;
 }
-.aboutRoll p {
+.aboutDivRow p {
   padding-top: 10px;
 }
-.widthofTheRoll {
-  width: 33%;
+.widthofTheRow {
+  width: 22rem;
 }
 
 /* customerReview */
@@ -47,6 +49,7 @@ body {
   border: 1px solid #ffffff;
   padding: 10px 5px;
   width: 33%;
+  text-align: justify;
 }
 .customerReview p {
   padding-bottom: 25px;
@@ -60,6 +63,7 @@ body {
 .imgDiv span {
   padding: 7px;
 }
+
 /* delivery section */
 .parcelDeliverySection {
   text-align: center;
@@ -70,9 +74,9 @@ body {
   padding-bottom: 6px;
 }
 .parcelDeliverySection img {
-  padding: 10px 20px 100px;
+  padding: 10px 0 90px 0;
   height: 600px;
-  width: 90%;
+  width: 100%;
 }
 
 /* footer */
@@ -91,9 +95,13 @@ footer {
 footer a {
   text-decoration: none;
 }
+footer a:hover {
+  opacity: 0.6;
+}
 .footerContainer {
   display: flex;
   gap: 10px;
+  padding-left: 0;
 }
 .iconContainer {
   justify-content: space-between;
@@ -104,4 +112,48 @@ footer img {
 }
 footer ul a {
   color: #ffffff;
+}
+
+/* media query for device */
+@media screen and (max-width: 480px) {
+  .parcelAboutSection {
+    padding: 20px 0;
+  }
+  .aboutDivRow {
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  .widthofTheRow {
+    width: 40%;
+    text-align: justify;
+  }
+  .customerReviewSection h2 {
+    padding-top: 5px;
+  }
+  .reviewDiv {
+    display: block;
+  }
+  .customerReview {
+    width: 100%;
+    margin: 10px;
+  }
+  .parcelDeliverySection img {
+    padding: 20px 0 30px 0;
+    height: 400px;
+    width: 100%;
+  }
+  footer {
+    padding: 10px 8px;
+  }
+  .footerContainer {
+    gap: 10px;
+  }
+}
+
+/* media query for ipad */
+@media screen and (max-width: 1200px) {
+  .imgDivSarah {
+    padding-top: 20px;
+  }
 }
