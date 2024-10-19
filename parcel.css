@@ -13,16 +13,12 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-/* Mobile styles (default) */
 .container {
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
+  justify-content: space-around;
+  padding: 0.625rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .i img {
@@ -30,25 +26,23 @@ body {
   max-width: 300px;
   height: auto;
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .got-bike {
+  line-height: 2rem;
   color: white;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
 }
 
 .btn {
   background: #ef6c00;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   border: none;
   border-radius: 0.5rem;
   color: white;
   cursor: pointer;
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
 }
 
 .btn:hover {
@@ -57,28 +51,25 @@ body {
 }
 
 .delivery {
+  margin-left: 3rem;
   color: white;
-  margin-bottom: 2rem;
-  font-size: 1.4rem;
 }
 
 h2 {
-  font-size: 2rem;
-  color: white;
-  margin-bottom: 1rem;
+  font-size: 1.7rem;
 }
 
 .para {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .para img {
   width: 100%;
   max-width: 300px;
-  height: auto;
 }
 
 .img1-para,
@@ -86,11 +77,12 @@ h2 {
 .img3-para {
   color: white;
   background: #323e44;
+  height: 15rem;
   border: 0.0625rem solid #323e44;
   border-radius: 0.5rem;
-  font-size: 1.3rem;
-  padding: 1.5rem;
-  margin-top: 1rem;
+  font-size: small;
+  padding: 2rem;
+  margin-top: -1rem;
 }
 
 a {
@@ -103,139 +95,114 @@ a {
 
 .founder {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 3rem;
-  text-align: center;
-  padding: 0 1rem;
+  justify-content: space-around;
+  margin-top: 10rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .founder-img img {
-  width: 100%;
-  max-width: 200px;
-  margin-bottom: 2rem;
+  width: 200px;
 }
 
 .founder .founder-para {
   color: white;
-  font-size: 1.4rem;
+  font-size: 2rem;
+  margin-left: 6rem;
 }
 
 .name-para {
-  margin-bottom: 1rem;
+  line-height: 3.5rem;
 }
 
 .founder-parcel {
   font-weight: 200;
-  margin-bottom: 2rem;
+  padding-top: 40rem;
 }
 
 a:hover {
   color: #ef6c00;
   background: white;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem;
 }
 
-/* Tablet styles */
-@media screen and (min-width: 600px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .i {
-    flex: 0 0 48%;
-  }
-
-  .got-bike {
-    flex: 0 0 48%;
-  }
-
-  .para {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .para > div {
-    flex: 0 0 48%;
-  }
-
+/* Responsive styles using max-width */
+@media screen and (max-width: 1024px) {
+  .container,
+  .para,
   .founder {
-    flex-direction: row;
-    text-align: left;
-    align-items: flex-start;
+    max-width: 90%;
   }
 
-  .founder-img {
-    flex: 0 0 30%;
-  }
-
-  .founder-para {
-    flex: 0 0 65%;
+  .founder .founder-para {
+    font-size: 1.8rem;
+    margin-left: 3rem;
   }
 }
 
-/* Desktop styles */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
   .container {
-    flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
   }
 
   .i img {
-    margin-right: 1rem;
-    margin-bottom: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 
   .got-bike {
-    margin-left: 1rem;
-    font-size: 1.6rem;
+    margin-left: 0;
+    text-align: center;
   }
 
   .delivery {
-    margin-left: 3rem;
-    font-size: 1.6rem;
+    margin-left: 0;
+    text-align: center;
   }
 
   .para {
-    flex-wrap: nowrap;
-    padding: 3rem;
-  }
-
-  .para > div {
-    flex: 1;
+    flex-direction: column;
+    align-items: center;
   }
 
   .img1-para,
   .img2-para,
   .img3-para {
-    height: 15rem;
-    margin-top: -1rem;
-    font-size: 1.4rem;
+    height: auto;
+    margin-top: 1rem;
   }
 
   .founder {
-    justify-content: space-around;
-    margin-top: 10rem;
+    flex-direction: column;
+    align-items: center;
   }
 
   .founder-img img {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   .founder .founder-para {
-    font-size: 1.8rem;
-    margin-left: 6rem;
+    font-size: 1.6rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 55%;
   }
 
-  .name-para {
-    line-height: 3.5rem;
+  .container,
+  .para,
+  .founder {
+    max-width: 95%;
   }
 
-  .founder-parcel {
-    padding-top: 4rem;
+  .founder .founder-para {
+    font-size: 1.4rem;
   }
 }
