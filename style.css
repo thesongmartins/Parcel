@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 .html {
   font-size: 62.5%;
@@ -17,7 +18,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   background-color: transparent;
   z-index: 1000;
 }
@@ -26,8 +27,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width:1200px; */
+  /* margin: 0 auto; */
 }
 
 .logo {
@@ -81,7 +82,7 @@ body {
 
 /* Hero section styles */
 .hero {
-  min-height: 80vh; /*changed from 100vh*/
+  min-height: 100vh;
   background-color: #1a1a1a;
   display: flex;
   align-items: center;
@@ -152,34 +153,26 @@ body {
 .fifth {
   display: flex;
   justify-content: space-around;
-  padding: 0 1rem; /*was 1rem*/
-  line-height: 2rem;
-  margin-left: -4rem;
-  color: #fff;
-}
-.seventh img {
-  width: 350px;
-  border-radius: 5px;
-}
-.tenth img {
-  width: 350px;
-  border-radius: 5px;
-}
-.eighth {
-  display: flex;
-  justify-content: space-around;
-  line-height: 2rem;
-  padding: 1rem;
-  margin-left: -4rem;
+
+  padding: 0 3rem 7rem; /*was 1rem*/
+  line-height: 1.5;
+  gap: 1.4rem;
+  /* margin-left: -4rem; */
   color: #fff;
 }
 .sixth h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
-.ninth h2 {
-  font-size: 2rem;
+.sixth p {
+  font-size: 1.2rem;
 }
-.ninth button {
+.seventh img,
+.tenth img {
+  max-width: 50rem; /*was 350px*/
+  border-radius: 0.9rem; /*was 5px*/
+}
+
+.sixth button {
   background: #ef6c00;
   color: #fff;
   border: none;
@@ -188,4 +181,54 @@ body {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+.sixth button:hover {
+  background: #fff;
+  color: #ef6c00;
+}
+
+/* .eighth {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2rem;
+  padding: 1rem;
+  margin-left: -4rem;
+  color: #fff;
+} */
+
+/* .ninth h2 {
+  font-size: 4rem;
+} */
+
+/* The flexed section for image starts here */
+.other-services-offered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+.other-services-offered article {
+  background: #323e44;
+  border-radius: 0.5rem;
+}
+.other-services-offered article {
+  max-width: 33%;
+}
+.other-services-offered article img {
+  width: 100%;
+}
+.serv-para {
+  padding: 1rem 0.49rem 0 1.5rem;
+  font-size: 1.5rem;
+}
+.serv-para p {
+  padding: 2rem 0;
+}
+.serv-para .last-para {
+  padding-bottom: 0.2rem;
+}
+.serv-para span,
+.serv-para a {
+  color: #ef6c00;
 }
