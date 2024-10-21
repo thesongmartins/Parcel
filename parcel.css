@@ -94,9 +94,9 @@ a {
 
 .founder {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center;
   padding: 0 1rem;
 }
