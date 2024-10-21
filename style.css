@@ -171,9 +171,13 @@ body {
 .sixth p {
   font-size: 1.2rem;
 }
+.seventh,
+.tenth {
+  max-width: 55%; /*was 350px*/
+}
 .seventh img,
 .tenth img {
-  max-width: 50rem; /*was 350px*/
+  width: 100%;
   border-radius: 0.9rem; /*was 5px*/
 }
 
@@ -236,4 +240,17 @@ body {
 .serv-para span,
 .serv-para a {
   color: #ef6c00;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero-content {
+    max-width: 42rem;
+  }
+  .sixth h2 {
+    font-size: 2em;
+  }
 }
