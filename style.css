@@ -251,6 +251,31 @@ body {
     max-width: 42rem;
   }
   .sixth h2 {
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+  .serv-para .first-para-serv {
+    padding-bottom: 2.7em;
+  }
+  .serv-para {
+    padding: 0.5em 0.2em;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .fifth .seventh,
+  .fifth .tenth {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .fifth .seventh img,
+  .fifth .tenth img {
+    width: 100%;
+  }
+  .other-services-offered {
+    flex-direction: column;
+  }
+  .other-services-offered article {
+    max-width: 90%;
+    margin-bottom: 2.5rem;
   }
 }
