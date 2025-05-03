@@ -17,6 +17,9 @@ body {
   background: #1a1a1a;
    color: #ffffff;
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 a {
@@ -24,6 +27,10 @@ a {
 }
 
 .color-1 {
+  color: #ef6c00;
+}
+
+.primary-color{
   color: #ef6c00;
 }
 
@@ -50,8 +57,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* max-width:1200px; */
-  /* margin: 0 auto; */
 }
 
 .logo {
@@ -69,9 +74,11 @@ a:hover {
   border-radius: 44%; /*changed from 4px*/
   margin-right: 0.2rem;
 }
+
 .logo-text {
   color: #ef6c00;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -173,15 +180,55 @@ a:hover {
   opacity: 0.8;
 }
 
-.fifth {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 3rem 7rem; /*was 1rem*/
-  line-height: 1.5;
-  gap: 1.4rem;
-  /* margin-left: -4rem; */
-  color: #fff;
+/* ++++++++++++ */
+/* ++++++++++++ */
+/* ++++++++++++ */
+/* ++++++++++++ */
+/* styling */
+
+.secondary-heading {
+  font-size: 2rem;
+  font-weight: 700;
 }
+
+.section {
+  padding: 1rem 2rem;
+}
+
+.margin-b {
+  margin-bottom: 1rem;
+}
+
+.margin-b-md {
+  margin-bottom: 2.6rem;
+}
+
+.btn {
+  background: #EF6C00;
+  color: #ffffff;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.cols-2 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 4rem;
+}
+
+.cols-img {
+  width:100%;
+   border-radius: 0.9rem;
+   object-fit: cover;
+}
+
+
+/* end */
+/* end */
+/* end */
+
 .sixth h2 {
   font-size: 2.3rem;
 }
@@ -195,7 +242,7 @@ a:hover {
 .seventh img,
 .tenth img {
   width: 100%;
-  border-radius: 0.9rem; /*was 5px*/
+ ; 
 }
 
 .sixth button {
@@ -213,18 +260,6 @@ a:hover {
   color: #ef6c00;
 }
 
-/* .eighth {
-  display: flex;
-  justify-content: space-around;
-  line-height: 2rem;
-  padding: 1rem;
-  margin-left: -4rem;
-  color: #fff;
-} */
-
-/* .ninth h2 {
-  font-size: 4rem;
-} */
 
 /* The flexed section for image starts here */
 .other-services-offered {
@@ -301,46 +336,11 @@ a:hover {
   }
 }
 
-/* html {
-  background: rgba(0, 0, 0, 0.89);
-  font-size: 62.5%;
-} */
-
-/* body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-} */
-
-/* Mobile styles (default) */
-/* .container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-} */
-
-/* .i img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-} */
 
 .got-bike {
   align-items: center;
 }
 
-/* .btn {
-  background: #ef6c00;
-  padding: 1rem 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-} */
 
 /* .btn:hover {
   background: white;
@@ -352,31 +352,6 @@ a:hover {
   padding-left: 1.5rem;
   /* margin-bottom: 1rem; */
 }
-
-/* .para {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
-} */
-
-/* .para img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-} */
-/* 
-.img1-para,
-.img2-para,
-.img3-para {
-  color: white;
-  background: #323e44;
-  border: 0.0625rem solid #323e44;
-  border-radius: 0.5rem;
-  font-size: 1.3rem;
-  padding: 1.5rem;
-  margin-top: 1rem;
-} */
 
 
 /* 
