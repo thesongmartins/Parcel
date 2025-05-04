@@ -35,12 +35,12 @@ a {
   color: #ef6c00;
 }
 
-a:hover {
+/* a:hover {
   color: #ef6c00;
   background: white;
   border-radius: 1rem;
   padding: 0.5rem;
-}
+} */
 
 /* Header styles */
 .header {
@@ -338,7 +338,7 @@ a:hover {
 }
 
 /* Media queries */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .hero {
     min-height: 60vh;
   }
@@ -348,7 +348,7 @@ a:hover {
   .sixth h2 {
     font-size: 1.5em;
   }
-}
+} */
 
 /* .btn:hover {
   background: white;
@@ -409,6 +409,24 @@ a:hover {
   width: 36rem;
   font-size: 1.7rem;
 }
+
+.aboutDivRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+.aboutDivRow h4 {
+  font-weight: 700px;
+}
+.aboutDivRow p {
+  padding-top: 10px;
+}
+.widthofTheRow {
+  width: 22rem;
+}
+
 /* customerReview */
 .review-container {
   display: flex;
@@ -436,6 +454,17 @@ a:hover {
   padding: 7px;
 }
 
+/* Delivery Section */
+.delivery-heading {
+  text-align: center;
+}
+.delivery-paragraphs {
+  text-align: center;
+}
+.delivery-image {
+  display: flex;
+  align-items: center;
+}
 /* footer */
 footer {
   background-color: #455a64;
@@ -443,6 +472,7 @@ footer {
 }
 .containLogo {
   display: flex;
+  align-items: center;
 }
 .logoParagraph {
   color: #ef6c00;
@@ -457,7 +487,10 @@ footer a:hover {
 }
 .footerContainer {
   display: flex;
-  gap: 10px;
+  gap: 3rem;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
   padding-left: 0;
 }
 .iconContainer {
