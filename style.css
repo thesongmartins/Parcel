@@ -409,36 +409,16 @@ a:hover {
   width: 36rem;
   font-size: 1.7rem;
 }
-
-.aboutDivRow {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 2rem 0;
-  gap: 2rem;
-}
-.aboutDivRow h4 {
-  font-weight: 700px;
-}
-.aboutDivRow p {
-  padding-top: 10px;
-}
-.widthofTheRow {
-  width: 22rem;
-}
-
 /* customerReview */
-.customerReviewSection h2 {
-  padding: 40px 10px;
-}
-.reviewDiv {
+.review-container {
   display: flex;
   gap: 20px;
 }
 .customerReview {
   border: 1px solid #ffffff;
-  padding: 10px 5px;
+  padding: 10px 10px;
   width: 33%;
+  border-radius: 0.3rem;
   text-align: justify;
 }
 .customerReview p {
@@ -449,6 +429,8 @@ a:hover {
 }
 .imgDiv {
   display: flex;
+  align-items: center;
+  padding-top: 3rem;
 }
 .imgDiv span {
   padding: 7px;
