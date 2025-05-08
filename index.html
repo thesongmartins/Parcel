@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parcel - Delivering Excellence</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <header class="header">
@@ -29,7 +29,7 @@
             <li><a href="#">SuperApp</a></li>
             <li><a href="#">Business</a></li>
             <li><a href="#">Press</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#" class="login-btn">Login</a></li>
           </ul>
         </div>
@@ -40,7 +40,7 @@
           <li><a href="#">SuperApp</a></li>
           <li><a href="#">Business</a></li>
           <li><a href="#">Press</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#" class="login-btn">Login</a></li>
         </ul>
       </nav>
@@ -48,35 +48,40 @@
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1>Delivering Excellence, Every Mile, Every Time In Nigeria</h1>
-          <p>
+          <h1 class="primary-heading">
+            Delivering Excellence, Every Mile, Every Time In Nigeria
+          </h1>
+          <p class="description margin-b-md">
             Quality Drivers, Express Services, Easy Tracking and Door Step
             Deliveries
           </p>
-          <div class="cta-buttons">
-            <button class="cta-primary">Let's Handle Your Deliveries</button>
-          </div>
+
+          <button class="cta-primary margin-b">
+            Let's Handle Your Deliveries
+          </button>
+
           <p class="service-area">Currently serving the 36 states in Nigeria</p>
         </div>
-        <div class="fourth">
-          <button>Get The App</button>
-        </div>
+
+        <button class="get-app-btn">Get The App</button>
       </section>
 
       <!-- First section -->
       <section class="cols-2 section">
-        <div>
+        <div class="features-content">
           <h2 class="secondary-heading margin-b">
             The Finest Delivery Drivers For Your Packages
           </h2>
 
-          <p>Be Sure Your Packages Are With Safe Hands</p>
+          <p class="secondary-description">
+            Be Sure Your Packages Are With Safe Hands
+          </p>
         </div>
 
         <div>
           <img
             class="cols-img cols-2-img"
-            src="./img/courier 1.png"
+            src="./assets/images/courier-driver.png"
             alt="courier guy"
           />
         </div>
@@ -85,14 +90,20 @@
       <!-- section section -->
       <section class="cols-2 section">
         <div>
-          <img class="cols-img cols-2-img" src="./img/smiling client 2 1.png" />
+          <img
+            class="cols-img cols-2-img"
+            src="./assets/images/smiling-client.png"
+            alt="A woman receiving a delivery"
+          />
         </div>
 
-        <div>
+        <div class="features-content">
           <h3 class="secondary-heading margin-b">
             We Will Ensure You Are Stress-Free With Our Doorstep Deliveries
           </h3>
-          <p class="margin-b-md">Be Sure Your Packages Arrives In Time</p>
+          <p class="secondary-description margin-b-md">
+            Be Sure Your Packages Arrives In Time
+          </p>
 
           <button class="btn">Let's Handle Your Deliveries</button>
         </div>
@@ -100,9 +111,9 @@
 
       <!-- section Got Bike -->
       <section class="cols-2 section">
-        <div>
+        <div class="features-content">
           <h2 class="secondary-heading margin-b">Got a bike?</h2>
-          <p class="margin-b-md">
+          <p class="secondary-description margin-b-md">
             Have you got a bike and you&apos;re looking to join the Parcel team,
             click on the button below, register get verified and be on board
             with us to have a new stream of income. We are excited to have you.
@@ -114,24 +125,27 @@
         <div>
           <img
             class="cols-img cols-2-img"
-            src="assets/delivery bike 1.png"
-            alt="Delivery Bike"
+            src="assets/images/delivery-bike.png"
+            alt="A delivery man on a bike"
           />
         </div>
       </section>
 
       <!-- Deliverables Section -->
       <section class="delivery-section">
-        <h3 class="secondary-heading margin-b">We Deliver More Than Parcels</h3>
+        <h3 class="secondary-heading margin-b-lg">
+          We Deliver More Than Parcels
+        </h3>
 
         <!-- three columns -->
         <section class="cols-3">
           <div class="cols">
-            <img class="cols-img" src="assets/Rectangle 1.png" alt="Burger" />
+            <img class="cols-img" src="assets/images/burger.png" alt="Burger" />
             <div class="cols-content">
               <h4 class="cols-content-title">Hungry?</h4>
               <p class="cols-content-description">
-                We&apos;ve got you covered with <span>Parcelfoods</span>
+                We&apos;ve got you covered with
+                <span>Parcelfoods</span>
               </p>
               <a class="btn-more" href="#">Learn More</a>
             </div>
@@ -140,13 +154,14 @@
           <div class="cols">
             <img
               class="cols-img"
-              src="assets/Rectangle 1 (1).png"
-              alt="Market Place"
+              src="assets/images/warehouse.png"
+              alt="A man moving boxes in a warehouse"
             />
             <div class="cols-content">
               <h4 class="cols-content-title">Run a business?</h4>
               <p class="cols-content-description">
-                We&apos;ve got your deliveries covered with <span>Parcel</span>
+                We&apos;ve got your deliveries covered with
+                <span>Parcel</span>
               </p>
               <a class="btn-more" href="#">Learn More</a>
             </div>
@@ -155,14 +170,15 @@
           <div class="cols">
             <img
               class="cols-img"
-              src="assets/Rectangle 1 (2).png"
+              src="assets/images/delivery-man.png"
               alt="Delivery guy on bike"
             />
             <div class="cols-content">
               <h4 class="cols-content-title">ParcPartners</h4>
               <p class="cols-content-description">
-                We&apos;9ve got you covered on efficient deliveries through our
-                numerous <span>ParcPartners</span>
+                We&apos;ve got you covered on efficient deliveries through our
+                numerous
+                <span>ParcPartners</span>
               </p>
               <a class="btn-more primary-color" href="#">Learn More</a>
             </div>
@@ -171,65 +187,67 @@
       </section>
 
       <!-- founder -->
-      <section class="founder section">
-        <div class="founder-img">
-          <img src="assets/Ellipse 1.png" alt="Founder's Picture" />
+      <section class="founder-section section">
+        <div class="founder-img-container">
+          <img
+            class="founder-img"
+            src="assets/images/founder.png"
+            alt="Ife April Apollo"
+          />
         </div>
         <div class="founder-content">
-          <h5>
+          <h5 class="founder-content-heading margin-b-md">
             Our team of drivers is a testament to our unwavering commitment to
             quality service. We take it as a solid responsibility to ensure our
             services to you are efficient and satisfactory
           </h5>
 
-          <p class="name-para">
-            <span class="founder-name">Ife April Apollo</span>
-            <br />
-            <span class="founder-parcel">Founder of Parcel</span>
-          </p>
+          <h6 class="founder-name margin-b">Ife April Apollo</h6>
+          <p class="founder-role">Founder of Parcel</p>
         </div>
       </section>
 
-      <!-- This is where frances started -->
-      <section class="section">
-        <div class="grid">
-          <h3 class="secondary-heading margin-b-md">
+      <section class="section" id="about">
+        <div>
+          <h3 class="tertiary-heading margin-b-md">
             The Parcel Super App ensures that you can do everything on one
             platform
           </h3>
           <div class="about-container">
             <div class="about-cols">
-              <h4>All deliveries in one app</h4>
-              <p>
+              <h5 class="about-title margin-b">All deliveries in one app</h5>
+              <p class="about-description">
                 Downloading multiple apps to sort out your different delieveries
                 are a thing of the past with the Parcel Superapp
               </p>
             </div>
 
             <div class="about-cols">
-              <h4>Pilot Tracking</h4>
-              <p>
+              <h5 class="about-title margin-b">Pilot Tracking</h5>
+              <p class="about-description">
                 Monitor your packages up to the doorstep delivery in real time!
                 You can also share tracking link with your customers
               </p>
             </div>
 
             <div class="about-cols">
-              <h4>Multi-point Deliveries</h4>
-              <p>
+              <h5 class="about-title margin-b">Multi-point Deliveries</h5>
+              <p class="about-description">
                 Got a lot of items to send out? You can use a singe delivery
                 pilot to make all your deliveries
               </p>
             </div>
 
             <div class="about-cols">
-              <h4>Schedule Delivery</h4>
-              <p>Need to have your package delivered at a specific time?</p>
+              <h4 class="about-title margin-b">Schedule Delivery</h4>
+              <p class="about-description">
+                Need to have your package delivered at a specific time?
+              </p>
             </div>
 
             <div class="about-cols">
-              <h4>Resend Orders</h4>
-              <p>
+              <h4 class="about-title margin-b">Resend Orders</h4>
+              <p class="about-description">
                 Think you've made an order before? It wasn't Deja vu-our order
                 resend feature is proof of that. Make it again without having to
                 fill those details right from start
@@ -237,8 +255,8 @@
             </div>
 
             <div class="about-cols">
-              <h4>Saved Addresses</h4>
-              <p>
+              <h4 class="about-title margin-b">Saved Addresses</h4>
+              <p class="about-description">
                 You can save your address for next time so you wont have to fill
                 it again. Just tap and keep moving
               </p>
@@ -249,88 +267,106 @@
 
       <!-- Customers Testimonials -->
       <section class="section">
-        <h2 class="secondary-heading margin-b">What customers are saying</h2>
+        <h3 class="secondary-heading margin-b">What customers are saying</h3>
+
         <div class="review-container">
           <div class="customerReview">
-            <p>Parcel has been my go to for delivery since the lockdown</p>
+            <p class="margin-b">
+              Parcel has been my go to for delivery since the lockdown
+            </p>
             <div class="imgDiv imgDivSarah">
-              <img src="./images/Sarah.png" alt="Sarah Fashola" />
-              <span>Sarah Fashola</span>
+              <img src="./assets/images/Sarah.png" alt="Sarah Fashola" />
+              <span class="user">Sarah Fashola</span>
             </div>
           </div>
 
           <div class="customerReview">
-            <p>
+            <p class="margin-b">
               Its Amazing how reliable and efficient their doorstep delivery has
               been.
             </p>
             <div class="imgDiv">
-              <img src="./images/Peter.png" alt="Peter's Photo" />
-              <span>Peter Obi</span>
+              <img src="./assets/images/Peter.png" alt="Peter's Photo" />
+              <span class="user">Peter Obi</span>
             </div>
           </div>
 
           <div class="customerReview">
-            <p>
+            <p class="margin-b">
               With Parcel you are assured of professional handling on your
               packages.
             </p>
             <div class="imgDiv">
-              <img src="./images/Ahmed.png" alt="Ahmed's Photo" />
-              <span>Ahmed Musa</span>
+              <img src="./assets/images/Ahmed.png" alt="Ahmed Musa" />
+              <span class="user">Ahmed Musa</span>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Delivery Section -->
-      <section class="">
-        <div>
-          <h1 class="secondary-heading delivery-heading">
+      <section class="delivery-section">
+        <div class="margin-b-lg">
+          <h4 class="secondary-heading margin-b">
             If It Fits, We'll Handle It.
-          </h1>
-          <div class="delivery-paragraphs">
-            <p>
-              We ensure no matter the size we will bring it to your doorstep.
-            </p>
-            <p>You think its too big?</p>
-            <p>Call us and let us do what we do best</p>
-          </div>
+          </h4>
+
+          <p>We ensure no matter the size we will bring it to your doorstep.</p>
+          <p>You think its too big?</p>
+          <p>Call us and let us do what we do best</p>
         </div>
-        <img src="./images/delivery.png" alt="delivery woman" />
+
+        <div class="delivery-img-container">
+          <img
+            class="delivery-img"
+            src="./assets/images/delivery-woman.png"
+            alt="A delivery woman with delivery boxes and a note pad checking out an address"
+          />
+        </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer>
-      <div class="iconContainer footerContainer">
-        <div class="containLogo">
-          <img src="./icons/parcellogo.png" alt="Logo" />
+    <footer class="footer">
+      <div class="footer-top margin-b">
+        <div class="logo-container">
+          <img src="./assets/icons/parcellogo.png" alt="Logo" />
           <p class="logoParagraph">ARCEL</p>
         </div>
+
         <div>
-          <a href="#"
-            ><img src="./icons/devicon_facebook.png" alt="facebook logo"
-          /></a>
-          <a href="#"
-            ><img src="./icons/skill-icons_instagram.png" alt="Instagram logo"
-          /></a>
-          <a href="#"
-            ><img src="./icons/devicon_linkedin.png" alt="linkedIn logo"
-          /></a>
+          <a href="#">
+            <img
+              src="./assets/icons/devicon_facebook.png"
+              alt="facebook link"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              src="./assets/icons/skill-icons_instagram.png"
+              alt="Instagram link"
+            />
+          </a>
+
+          <a href="#">
+            <img
+              src="./assets/icons/devicon_linkedin.png"
+              alt="linkedIn link"
+            />
+          </a>
         </div>
       </div>
 
-      <div class="">
-        <ul class="footerContainer">
-          <a href="#"><li>Terms of Service</li></a>
-          <a href="#"><li>Cookies Policy</li></a>
-          <a href="#"><li>FAQ</li></a>
-          <a href="#"><li>Support</li></a>
-          <a href="#"><li>Careers</li></a>
-        </ul>
-      </div>
+      <ul class="footer-links">
+        <a href="#"><li class="footer-link">Terms of Service</li></a>
+        <a href="#"><li class="footer-link">Cookies Policy</li></a>
+        <a href="#"><li class="footer-link">FAQ</li></a>
+        <a href="#"><li class="footer-link">Support</li></a>
+        <a href="#"><li class="footer-link">Careers</li></a>
+      </ul>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
