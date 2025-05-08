@@ -348,10 +348,11 @@ overflow: hidden;
 }
 
 
-/* .btn:hover {
+.btn:hover {
   background: white;
   color: #ef6c00;
-} */
+  transition: all .3s ease;
+}
 
 .founder-name {
   padding: 0;
